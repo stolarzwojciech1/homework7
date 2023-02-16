@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="images/share1.png">
+
+    <link rel="icon" href="images/horse.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,400&display=swap"
+        rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <link href="css/list.css" rel="stylesheet">
+
+    <script src="js/script.js" defer></script>
+
+    <title>To do list</title>
+</head>
+
+<body class="body">
+
+    <header>
+        <h1>Lista zadań</h1>
+    </header>
+
+    <section class="input__section">
+        <h2 class="input__sectionHeader">Dodaj nowe zadanie</h2>
+        <form class="form js-form">
+            <input class="form__input js-newTask" placeholder="Co jest do zrobienia?" autofocus>
+            <button class="form__button js-newTaskButton">Dodaj zadanie</button>
+        </form>
+    </section>
+
+    <section class="list">
+        <h2 class="list__header"></h2>
+        <div class="list__content">
+            <ul class="js-tasksList"></ul>
+        </div>
+    </section>
+
+</body>
+
+</html>

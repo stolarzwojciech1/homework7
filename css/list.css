@@ -1,0 +1,123 @@
+.list {
+    background-color: #fff;
+}
+
+.list__header {
+    display: flex;
+    border-bottom: 2px solid #ddd;
+    padding: 15px;
+    margin: 0;
+    padding-left: 30px;
+}
+
+@media (max-width: 768px) {
+    .list__header {
+        flex-wrap: wrap;
+    }
+}
+
+.list__content {
+    min-height: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.list__item {
+    display: flex;
+    margin: 10px 0;
+    margin-right: 30px;
+    list-style: none;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    align-items: center;
+}
+
+.list__itemText {
+    word-break: break-all;
+    margin-right: 15px;
+}
+
+.list__item--hidden {
+    display: none;
+}
+
+.list__item--finished {
+    text-decoration: line-through;
+}
+
+.list__button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    color: white;
+    flex-shrink: 0;
+}
+
+.list__button:active {
+    border: 2px solid black;
+}
+
+.list__button--finish {
+    background-color: #1a7b1e;
+    margin-right: 20px;
+    transition: 0.3s;
+}
+
+.list__button--finish:hover {
+    background-color: #1a7b1dc5;
+}
+
+.list__button--delete {
+    background-color: #ed293a;
+    margin-left: auto;
+    transition: 0.3s;
+}
+
+.list__button--delete:hover {
+    background-color: #ed2939c5;
+}
+
+.header__button--hideDone {
+    background: none;
+    border: none;
+    margin-left: auto;
+    font-size: 18px;
+    color: #007382;
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    .header__button--hideDone {
+        flex-basis: 100%;
+        margin-top: 20px;
+    }
+}
+
+.header__button--hideDone:hover {
+    color: #007382b4;
+}
+
+.header__button--finishAll {
+    background: none;
+    border: none;
+    margin-left: 10px;
+    font-size: 18px;
+    color: #007382;
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    .header__button--finishAll {
+        flex-basis: 100%;
+        padding: 10px;
+        margin-top: 10px;
+    }
+}
+
+.header__button--finishAll:hover {
+    color: #007382b4;
+}
+
+.header__button--finishAll.disabled {
+    color: #007382ab;
+}
