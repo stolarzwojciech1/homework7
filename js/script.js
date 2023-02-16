@@ -71,11 +71,9 @@
             });
             const openAllButton = document.querySelector(".js-openAllButton");
             openAllButton.addEventListener("click", () => {
-
-                if(a="0"){openAllTasks();
-                a=1;}
-                else {  finishAllTasks()  
-                a=0; }
+ 
+            
+                openAllButton.classList.toggle(openAllTasks());
                 
         });
         };
